@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "food_name": "Apple",
+    "calories": 95,
+    "logged_at": "2023-10-01T08:00:00Z"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "food_name": "Grilled Chicken Breast",
+    "calories": 284,
+    "logged_at": "2023-10-01T13:00:00Z"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "food_name": "Avocado Toast",
+    "calories": 350,
+    "logged_at": "2023-10-01T18:00:00Z"
+  }
+]
