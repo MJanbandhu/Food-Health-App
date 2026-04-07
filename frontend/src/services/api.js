@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Use Vite env var if provided, otherwise default to relative path for Nginx or absolute for dev
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+// Use strict relative path because backend and frontend are now served from the exact same port/domain.
+const API_BASE = '/api/v1';
 
 const apiClient = axios.create({
   baseURL: API_BASE,
