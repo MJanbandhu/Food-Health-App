@@ -1,14 +1,10 @@
 from fastapi import APIRouter
+from app.ai.vertex_ai_client import vertex_client
 
 router = APIRouter()
 
 @router.get("/recommendations")
 def get_recommendations():
-    # Mock Vertex AI recommendation
-    return {
-        "recommendations": [
-            "We recommend a light salad for dinner.",
-            "Try adding more healthy fats like avocado.",
-            "Drink 2 more glasses of water today."
-        ]
-    }
+    # Attempt to use Vertex AI
+    recs = vertex_client.get_smart_recommendations()
+    return {"recommendations": recs}
